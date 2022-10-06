@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>CSS INTERVIEW Q&A (DAY2)</h1>
+    <h3>1. What is box-sizing?</h3>
+    <p>Box-sizing property defines how the width and height gets applied on an element.</p>
+    <p>Default value of box-sizing is content-box, in this case the actual width of the box will be equal to the border
+        and padding and width of the box ( Actual width : width + border + padding ). </p>
+    <p>In case when box-sizing is set to be border-box, then the actual width will be equal to the width of the box
+        itself. Means if we will increase the padding or border of the box then it will not increase the width of the
+        box.
+    </p>
+    <ol>
+        <li>content-box (Default)</li>
+        <li>border-box</li>
+    </ol>
+    <p>output:-</p>
+    <div class="content-box">Content box</div>
+    <br>
+    <div class="border-box">Border box</div>
+    <hr>
+    <h3>2. What is animation-delay?</h3>
+    <p>It is a sub-property of CSS animation. It defines how long the animation has to wait before starting. Using the
+        animation-delay property, you define the delay by specifying the number of seconds or milliseconds it should
+        take before playing.
+    </p>
+    <p>output:-</p>
+    <div class="div"></div>
+    <hr>
+    <h3>3. Which property will you use to merge cells horizontally in a grid?
+    </h3>
+    <p>grid-column-start and grid-column-end property can be used to merge cells vertically. It also has a shorthand
+        i.e., grid-column: start/end. If you want to merge two elements in row then we will have to use grid-row
+        property inside the child element. Remember these properties are applicable only to child elements not to parent
+        elements.</p>
+    <p>output:-</p>
+    <div class="grid-container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <hr>
+    <h3>4. Which property will you use to merge cells horizontally in a grid?</h3>
+    <p>grid-row-start and grid-row-end property can be used to merge cells horizontally. It also has a shorthand i.e.,
+        grid-row: grid-row-start/grid-row-end;
+    </p>
+    <p>output:-</p>
+    <div class="grid-container">
+        <div class="item item01">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <hr>
+    <h3>5. What is the difference between display none and visibility hidden?</h3>
+    <p>Display:- none removes the element from the document. It does not take up any space.</p>
+    <p>Visibility:- hidden hides the element, but it still takes up space in the layout.</p>
+    <p>output:-</p>
+    <p class="note"> Note:- See code to know about display none and visibility hidden</p>
+    <div class="none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam doloribus quos harum ut, laudantium, voluptas blanditiis exercitationem odit iure inventore totam! Repudiandae vitae doloremque earum cumque explicabo excepturi ullam delectus fugit reprehenderit ipsa eveniet illo reiciendis ea saepe possimus voluptates laborum velit aliquam qui id, magni dolore? Omnis, earum? Recusandae, labore? Voluptatibus, necessitatibus ipsam unde ipsa at neque ipsum nobis hic? Maxime dicta alias quas beatae, voluptas expedita eius. Mollitia quam commodi ea praesentium nesciunt aliquid, rerum recusandae at non iure alias incidunt quibusdam maiores. Sequi maiores nemo sed animi eaque aliquam, quos deleniti repudiandae officia maxime quod esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate hic adipisci incidunt numquam? Sapiente maiores dignissimos suscipit quasi ipsa molestias soluta aut, quibusdam adipisci culpa qui optio, autem itaque. Ipsam, odit tenetur consectetur soluta, omnis non eius voluptates minima laudantium possimus recusandae ad ullam deserunt fuga exercitationem. Quia fugit expedita natus consectetur vero deleniti nulla debitis nobis cumque minima dignissimos quidem cupiditate itaque nostrum quis aspernatur, nihil aut maxime excepturi dolorem perferendis? Hic quam, nihil vel ex blanditiis delectus libero velit maiores quibusdam atque impedit sunt officia eligendi adipisci dolore consequuntur illum similique exercitationem quia numquam odit nobis vitae!</div>
+    <div class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam doloribus quos harum ut, laudantium, voluptas blanditiis exercitationem odit iure inventore totam! Repudiandae vitae doloremque earum cumque explicabo excepturi ullam delectus fugit reprehenderit ipsa eveniet illo reiciendis ea saepe possimus voluptates laborum velit aliquam qui id, magni dolore? Omnis, earum? Recusandae, labore? Voluptatibus, necessitatibus ipsam unde ipsa at neque ipsum nobis hic? Maxime dicta alias quas beatae, voluptas expedita eius. Mollitia quam commodi ea praesentium nesciunt aliquid, rerum recusandae at non iure alias incidunt quibusdam maiores. Sequi maiores nemo sed animi eaque aliquam, quos deleniti repudiandae officia maxime quod esse? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate hic adipisci incidunt numquam? Sapiente maiores dignissimos suscipit quasi ipsa molestias soluta aut, quibusdam adipisci culpa qui optio, autem itaque. Ipsam, odit tenetur consectetur soluta, omnis non eius voluptates minima laudantium possimus recusandae ad ullam deserunt fuga exercitationem. Quia fugit expedita natus consectetur vero deleniti nulla debitis nobis cumque minima dignissimos quidem cupiditate itaque nostrum quis aspernatur, nihil aut maxime excepturi dolorem perferendis? Hic quam, nihil vel ex blanditiis delectus libero velit maiores quibusdam atque impedit sunt officia eligendi adipisci dolore consequuntur illum similique exercitationem quia numquam odit nobis vitae!</div>
+
+</body>
+
+</html>
